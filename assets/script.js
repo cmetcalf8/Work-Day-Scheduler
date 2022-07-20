@@ -18,7 +18,7 @@ $(".saveBtn").click(
 function textInput() {
     var currentTime = moment().hour();
     // creating a loop checking the time blocks.
-    description.each(function () {
+    $(".time-block").each(function () {
         var blockHour = parseInt($(this).attr("id").split("hour")[1]);
 
         if (blockHour < currentTime) {
